@@ -9,9 +9,9 @@ const date = new Date(2011, 0, 1);
 let uName = prompt("What is your name?");
 console.log(uName);
 if (uName != null && uName != "") {
-  socket.emit("new-user", uName); // to make a connection
+  socket.emit("new-user", uName);
   socket.on("user-connected", (name) => {
-    // when user connected
+
     sendMessage("other", `joined to conversion`, name);
   });
 
