@@ -72,4 +72,6 @@ function sendMessage(type, message, senderName) {
         alt="avatar 1" style="width: 45px; height: 100%;">`;
   }
   msgContainer.append(msg);
+
+  msgContainer.scrollTop = msgContainer.scrollHeight;
 }
